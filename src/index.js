@@ -38,13 +38,13 @@ const DetailView = (props) => (
         <div className='recipe-ingredients'>
             <h1>INGREDIENTS</h1>
             <ul>
-                {props.detailedRecipe.ingredients ? props.detailedRecipe.ingredients.map(ingredient => <li>{ingredient}</li>) : null}
+                {props.detailedRecipe.ingredients ? props.detailedRecipe.ingredients.map(ingredient => <li className='list-items'>{ingredient}</li>) : null}
             </ul>
         </div>
         <div className='recipe-instructions'>
             <h1>INSTRUCTIONS</h1>
             <ul>
-                {props.detailedRecipe.instructions ? props.detailedRecipe.instructions.map(instruction => <li>{instruction}</li>) : null}
+                {props.detailedRecipe.instructions ? props.detailedRecipe.instructions.map(instruction => <li className='list-items'>{instruction}</li>) : null}
             </ul>
         </div>
     </div>

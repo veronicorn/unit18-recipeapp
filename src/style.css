@@ -61,14 +61,14 @@ form {
     grid-column-end: 2;
     align-self: start;
     padding: 5px;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 .recipe-instructions {
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 5px;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 input {
@@ -77,6 +77,7 @@ input {
     border-radius: 4px;
     border: 1px solid #5e5c5c;
     outline: none;
+    font-size: 12pt;
 }
 
 input::placeholder {
@@ -93,9 +94,15 @@ button {
     outline: none;
     font-weight: bold;
     cursor: pointer;
+    font-size: 12pt;
 }
 
 h1 {
     font-weight: bold;
     font-size: 10pt;
+    padding-bottom: 20px;
+}
+
+.list-items {
+    padding-bottom: 15px;
 }
