@@ -14,7 +14,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 10px;
-    background-color: #2cbfc4;
+    background-color: #47c3c7;
     color: white;
     font-family: 'Lobster', cursive;
     font-size: 25pt;
@@ -84,7 +84,7 @@ input::placeholder {
 }
 
 button {
-    background-color: #2cbfc4;
+    background-color: #47c3c7;
     box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
     padding: 6px;
     border-radius: 4px;

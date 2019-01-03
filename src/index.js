@@ -37,11 +37,15 @@ const DetailView = (props) => (
         </div>
         <div className='recipe-ingredients'>
             <h1>INGREDIENTS</h1>
-            {props.detailedRecipe.ingredients}
+            <ul>
+                {props.detailedRecipe.ingredients ? props.detailedRecipe.ingredients.map(ingredient => <li>{ingredient}</li>) : null}
+            </ul>
         </div>
         <div className='recipe-instructions'>
             <h1>INSTRUCTIONS</h1>
-            {props.detailedRecipe.instructions}
+            <ul>
+                {props.detailedRecipe.instructions ? props.detailedRecipe.instructions.map(instruction => <li>{instruction}</li>) : null}
+            </ul>
         </div>
     </div>
 );
@@ -483,10 +487,12 @@ class App extends React.Component {
     selectRecipes = (event) => {
         event.preventDefault();
         const filteredRecipes = this.state.recipeList.filter(recipe => recipe.name.toLowerCase().includes(this.state.searchVal.toLowerCase()));
+        this.detailRecipe(filteredRecipes[0].id);
         this.setState({ selectedRecipes: filteredRecipes });
     };
 
     detailRecipe = (id) => {
+        this.setState({ detailedRecipe: [] });
         this.setState({ detailedRecipe: this.state.recipeList.find(recipe => recipe.id === id) })
     }
 
