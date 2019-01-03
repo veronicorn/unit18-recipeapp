@@ -5,7 +5,7 @@ import './style.css';
 
 const Header = () => (
     <div className='header-bar' >
-        <a href='/' id='refresh-link'><i class="fas fa-utensils"></i> RecipeApp</a>
+        <a href='https://veronicorn.github.io/unit18-recipeapp/' id='refresh-link'><i class="fas fa-utensils"></i> RecipeApp</a>
     </div>
 );
 
